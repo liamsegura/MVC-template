@@ -1,0 +1,295 @@
+/* Global Styles */
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #f5f8fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+li{
+    list-style: none;
+}
+  /* Flexbox Layout */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Form Container Styles */
+  .form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 85%;
+  }
+  
+  /* Form Title Styles */
+  .form-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Form Group Styles */
+  .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Form Label Styles */
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    flex: 1;
+  }
+  
+  /* Form Input Styles */
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #d9d9d9;
+  }  
+
+  /* Form Input Styles */
+.form-group input:focus {
+    outline: none;
+    border-color: #1da1f2;
+  }
+  
+  /* Form Submit Button Styles */
+  .form-submit-btn {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 100%;
+    border: none;
+  }
+  
+  /* Media Queries */
+  @media only screen and (max-width: 768px) {
+    /* Form Container Styles */
+    .form-container {
+      padding: 10px;
+    }
+  
+    /* Form Title Styles */
+    .form-title {
+      font-size: 20px;
+    }
+  
+    /* Form Group Styles */
+    .form-group {
+      margin-bottom: 15px;
+    }
+  
+    /* Form Label Styles */
+    .form-group label {
+      font-size: 14px;
+    }
+  
+    /* Form Input Styles */
+    .form-group input {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    /* Form Submit Button Styles */
+    .form-submit-btn {
+      padding: 8px;
+      font-size: 14px;
+    }
+  }
+
+  /* Home Button Styles */
+.home-btn {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  
+  /* Flexbox Layout */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Home Container Styles */
+  .home-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 75%;
+    text-align: center;
+  }
+  
+  /* Home Title Styles */
+  .home-title {
+    margin-bottom: 20px;
+  }
+  
+  /* Home Title h1 Styles */
+  .home-title h1 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  /* Home Buttons Styles */
+  .home-btns {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Home Button Styles */
+  .home-btn {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .back-btn{
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    text-decoration: none;
+  }
+  
+.completed{
+    text-decoration: line-through;
+    color: gray;
+}
+.not{
+    text-decoration: underline;
+}
+/* Flexbox Layout */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Todo Container Styles */
+  .todo-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Todo Title Styles */
+  .todo-container h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Todo Item Styles */
+  .todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f5f8fa;
+  }
+  
+  /* Todo Completed Styles */
+  .completed {
+    text-decoration: line-through;
+    color: #657786;
+  }
+  
+  /* Todo Delete Button Styles */
+  .todo-del-btn {
+    background-color: #e0245e;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  /* Todo Form Styles */
+  .todo-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+  
+  /* Todo Add Button Styles */
+  .todo-submit-btn {
+    background-color: #1b1b1b;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;
+    }
+    
+    /* Todo Logout Button Styles */
+    .todo-logout-btn {
+    background-color: transparent;
+    background-color: #1b1b1b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    }
+    
+    /* Media Queries */
+    @media screen and (max-width: 600px) {
+    .todo-container {
+    width: 90%;
+    }
+    .todo-input {
+    width: 100%;
+    }
+    }
+  

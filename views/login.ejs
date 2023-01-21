@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <title>Twitter Login</title>
+  </head>
+  <body>
+    <% if (locals.messages.errors) { %>
+        <% messages.errors.forEach( el => { %>
+            <div class="alert alert-danger"><%= el.msg %></div>
+        <% }) %>    
+    <% } %>
+    <% if (locals.messages.info) { %>
+        <% messages.info.forEach( el => { %>
+            <div class="alert alert-danger"><%= el.msg %></div>
+        <% }) %>    
+    <% } %>
+    <div class="container">
+      <div class="form-container">
+        <form class="login-form" action="/login" method="post">
+          <h2 class="form-title">Login</h2>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <button class="form-submit-btn" type="submit">Log In</button>
+        </form>
+        <a href="/" class="back-btn">Back</a>
+      </div>
+    </div>
+  </body>
+</html>
