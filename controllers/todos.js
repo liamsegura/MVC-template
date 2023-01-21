@@ -16,7 +16,7 @@ module.exports = {
         try{
             const todoItem = await Todo.findById(req.params.id)
             console.log(todoItem)
-            res.render('todo.ejs', {todo})
+            res.render('todo.ejs', {todoItem})
         }catch(err){
             console.log(err)
         }
